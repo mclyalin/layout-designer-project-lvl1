@@ -20,7 +20,7 @@
 
 @font-face {
   font-weight: 400;
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:wght@300;400&display=swap");
 }
 
@@ -28,12 +28,14 @@ body {
   width: 100vw;
   margin: 0;
 
-  font: 16px / 1.6em "Open Sans", sans-serif;
   color: var(--dark);
+  font: 16px / 1.6em "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: "Neucha";
+h1,
+h2,
+h3 {
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
 
@@ -84,16 +86,16 @@ section > * {
 }
 
 .bg-img::before {
-  display: block;
-
   position: absolute;
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
+
+  display: block;
 
   background-image: url("../../assets/images/background.png");
   opacity: 0.06;
 
-  content: '';
+  content: "";
 }
