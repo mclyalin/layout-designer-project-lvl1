@@ -34,10 +34,14 @@ h3 {
 }
 
 h1 {
+  margin-bottom: 185px;
+
   font-size: 72px;
 }
 
 h2 {
+  margin-bottom: 0.4em;
+
   font-size: 60px;
 }
 
@@ -45,21 +49,7 @@ h3 {
   font-size: 34px;
 }
 
-p {
-  margin: 0;
-}
-
 /** Utilities **/
-
-.container {
-  display: flex;
-  justify-content: center;
-  padding: 100px 0;
-}
-
-.container > * {
-  width: 1110px;
-}
 
 .col-2 {
   display: flex;
@@ -73,8 +63,35 @@ p {
 
 /** Elements **/
 
-.headers > h2 {
-  margin-bottom: 0.4em;
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.container > * {
+  width: 1110px;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section > img {
+  position: absolute;
+  top: -45px;
+  right: -270px;
+
+  display: block;
+  height: 525px;
+}
+
+.button {
+  padding: 12px 24px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -84,6 +101,7 @@ p {
 
 .subheader {
   font-weight: 700;
+
   text-transform: uppercase;
 }
 
@@ -99,6 +117,10 @@ p {
 
 .bg-brown {
   background-color: var(--brown);
+}
+
+.bg-primary {
+  background-color: var(--primary);
 }
 
 .bg-primary-dark {
@@ -126,4 +148,10 @@ p {
   opacity: 0.1;
 
   content: "";
+}
+
+/** Сolors **/
+
+.color-primary {
+  color: var(--primary);
 }
