@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
 :root {
   --white: #fff;
   --white-50: #d7ccc0;
@@ -8,18 +11,6 @@
   --dark-50: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:wght@300;400&display=swap");
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: Neucha, sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:wght@300;400&display=swap");
 }
 
 /** General **/
@@ -35,7 +26,10 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Neucha, sans-serif;
+  margin: 0;
+
+  font-weight: 400;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
@@ -51,9 +45,8 @@ h3 {
   font-size: 34px;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
+p {
+  margin: 0;
 }
 
 /** Utilities **/
@@ -72,6 +65,26 @@ article {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+}
+
+.width-equal > * {
+  flex: 1 1 0%;
+}
+
+/** Elements **/
+
+.headers > h2 {
+  margin-bottom: 0.4em;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-family: Neucha, cursive;
+}
+
+.subheader {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /** Backgrounds **/
@@ -94,12 +107,14 @@ article {
 
 .bg-img {
   position: relative;
+  z-index: -2;
 }
 
 .bg-img::before {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 
   display: block;
   width: 100%;
