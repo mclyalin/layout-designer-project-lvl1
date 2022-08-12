@@ -82,6 +82,8 @@ h3 {
   top: -45px;
   right: -270px;
 
+  z-index: -1;
+
   display: block;
   height: 525px;
 }
@@ -129,14 +131,13 @@ h3 {
 
 .bg-img {
   position: relative;
-  z-index: -2;
 }
 
 .bg-img::before {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 
   display: block;
   width: 100%;
@@ -144,10 +145,15 @@ h3 {
 
   background-image: url("../../assets/images/background.png");
   background-repeat: no-repeat;
+  background-position: 50% 0;
   background-size: cover;
   opacity: 0.1;
 
   content: "";
+}
+
+.bg-img > * {
+  z-index: 2;
 }
 
 /** Сolors **/
