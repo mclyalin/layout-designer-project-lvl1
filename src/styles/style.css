@@ -17,7 +17,7 @@
 /** General **/
 
 body {
-  width: 100vw;
+  /* width: auto; */
   margin: 0;
 
   color: var(--dark);
@@ -60,6 +60,15 @@ h3 {
 
 .width-equal > * {
   flex: 1 1 0%;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mx-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /** Elements **/
@@ -112,8 +121,20 @@ h3 {
   background-color: var(--primary-hover);
 }
 
-.read-more {
-  margin-top: 40px;
+.video-section {
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  height: 369px;
+}
+
+.video {
+  position: relative;
+  z-index: 10;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .subtitle {
@@ -178,6 +199,6 @@ h3 {
 
 /** Сolors **/
 
-.color-primary {
+.text-primary {
   color: var(--primary);
 }
