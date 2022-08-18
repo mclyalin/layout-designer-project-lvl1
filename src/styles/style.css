@@ -17,7 +17,6 @@
 /** General **/
 
 body {
-  /* width: auto; */
   margin: 0;
 
   color: var(--dark);
@@ -127,6 +126,7 @@ h3 {
 
 .video-container {
   position: relative;
+
   height: 369px;
 }
 
@@ -134,7 +134,72 @@ h3 {
   position: relative;
   z-index: 10;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 15%));
+}
+
+.nav-section {
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  display: block;
+  flex: 0 1 350px;
+
+  box-sizing: border-box;
+}
+
+.nav-header {
+  margin: 0;
+
+  font-size: 52px;
+}
+
+.nav-link {
+  padding: 24px;
+
+  text-decoration: none;
+
+  background-color: var(--light);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--primary);
+}
+
+.nav-link-number {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+  font: 64px / 1em Neucha, sans-serif;
+}
+
+.nav-link-header {
+  margin-bottom: 16px;
+
+  color: var(--primary);
+}
+
+.nav-link-description {
+  margin: 0;
+
+  color: var(--dark);
+}
+
+.nav-link:hover .nav-link-number,
+.nav-link:hover .nav-link-header,
+.nav-link:hover .nav-link-description,
+.nav-link:focus .nav-link-number,
+.nav-link:focus .nav-link-header,
+.nav-link:focus .nav-link-description {
+  color: var(--white);
 }
 
 .subtitle {
@@ -201,4 +266,8 @@ h3 {
 
 .text-primary {
   color: var(--primary);
+}
+
+.text-white {
+  color: var(--white);
 }
