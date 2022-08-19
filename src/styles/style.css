@@ -49,6 +49,10 @@ h3 {
   font-size: 34px;
 }
 
+p {
+  margin: 16px 0 0;
+}
+
 /** Utilities **/
 
 .col-2 {
@@ -63,6 +67,10 @@ h3 {
 
 .mt-40 {
   margin-top: 40px;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mx-30 {
@@ -133,8 +141,6 @@ h3 {
 .video {
   position: relative;
   z-index: 10;
-
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 15%));
 }
 
 .nav-section {
@@ -178,18 +184,14 @@ h3 {
   margin-bottom: 40px;
 
   color: var(--primary-dark);
-  font: 64px / 1em Neucha, sans-serif;
+  font: 64px / 1 Neucha, sans-serif;
 }
 
 .nav-link-header {
-  margin-bottom: 16px;
-
   color: var(--primary);
 }
 
 .nav-link-description {
-  margin: 0;
-
   color: var(--dark);
 }
 
@@ -202,15 +204,33 @@ h3 {
   color: var(--white);
 }
 
-.subtitle {
-  font-size: 24px;
+.article-subtitle,
+.article-description {
   font-family: Neucha, cursive;
+  line-height: 1.2;
 }
 
-.subheader {
-  font-weight: 700;
+.article-subtitle {
+  margin-bottom: 8px;
+
+  color: var(--dark-50);
+  font-size: 24px;
+}
+
+.article-description {
+  font-size: 34px;
+}
+
+.article-subheader {
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+
+  color: var(--white);
+  font: bold 14px / 1.2 "Open Sans", sans-serif;
 
   text-transform: uppercase;
+
+  background-color: var(--brown);
 }
 
 /** Backgrounds **/
@@ -270,4 +290,10 @@ h3 {
 
 .text-white {
   color: var(--white);
+}
+
+/** Effects **/
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 15%));
 }
